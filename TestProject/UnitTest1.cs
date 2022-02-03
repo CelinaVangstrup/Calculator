@@ -21,5 +21,6 @@ namespace TestProject
             double sum = _uut.Add(2, 3);
             Assert.That(expected, Is.EqualTo(sum));
         }
+        
     }
 }
