@@ -6,7 +6,7 @@ namespace Calculator
 {
     public class SimpleCalculator
     {
-        public double Accumulate { get; set; }
+        public double Accumulate { get; private set; } = 0;
         
         public double Add(double a, double b)
         {
@@ -52,6 +52,11 @@ namespace Calculator
            {
               throw new Exception();
            }
+        }
+
+        public void Clear()
+        {
+            Accumulate = 0;
         }
     }
 }
