@@ -21,32 +21,32 @@ namespace Calculator
          Console.WriteLine("Tryk [D] for at dividere");
 
 
-         //while (true)
-         //{
-         //   if (Console.KeyAvailable)
-         //   {
-         //      var key = Console.ReadKey(true);
-         //      switch (key.KeyChar)
-         //      {
-         //         case 'A':
-         //         case 'a':
-         //            Console.WriteLine(Calculator.Add(number1, number2));
-         //            break;
-         //         case 's':
-         //         case 'S':
-         //            Console.WriteLine(Calculator.Subtract(number1, number2));
-         //            break;
-         //         case 'm':
-         //         case 'M':
-         //            Console.WriteLine(Calculator.Multiply(number1, number2));
-         //            break;
-         //         case 'd':
-         //         case 'D':
-         //            Console.WriteLine(Calculator.Divide(number1, number2));
-         //            break;
-         //      }
-         //   }
-         //}
+         while (true)
+         {
+            if (Console.KeyAvailable)
+            {
+               var key = Console.ReadKey(true);
+               switch (key.KeyChar)
+               {
+                  case 'A':
+                  case 'a':
+                     Console.WriteLine(Calculator.Add(number1, number2));
+                     break;
+                  case 's':
+                  case 'S':
+                     Console.WriteLine(Calculator.Subtract(number1, number2));
+                     break;
+                  case 'm':
+                  case 'M':
+                     Console.WriteLine(Calculator.Multiply(number1, number2));
+                     break;
+                  case 'd':
+                  case 'D':
+                     Console.WriteLine(Calculator.Divide(number1, number2));
+                     break;
+               }
+            }
+         }
       }
    }
 }
