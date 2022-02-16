@@ -42,16 +42,16 @@ namespace Calculator
       public double Divide(double dividend, double divisor)
       {
 
-         //if (divisor!=0)
-         //{
-         var divideResult = dividend / divisor;
-         Accumulate = divideResult;
-         return divideResult;
-         //}
-         //else
-         //{
-         //   throw new Exception("Du prøvede at dividere med nul");
-         //}
+         if (divisor != 0)
+         {
+            var divideResult = dividend / divisor;
+            Accumulate = divideResult;
+            return divideResult;
+         }
+         else
+         {
+            throw new Exception("Du prøvede at dividere med nul");
+         }
       }
 
       public void Clear()
