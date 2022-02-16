@@ -42,7 +42,7 @@ namespace Calculator
            }
            else
            {
-              throw new Exception();
+              throw new Exception("Du prøvede at dividere med nul");
            }
         }
     }
